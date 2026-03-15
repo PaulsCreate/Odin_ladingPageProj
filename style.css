@@ -20,14 +20,15 @@ ul {
 
 .header {
     display: flex;
-    padding: 8px;
+    height: 50px;
+    padding: 0 200px;
     padding-bottom: 40px;
     color: white;
     align-items: center;
     justify-content: space-between;
     background: #1f2937;
-    padding-left: 130px;
-    padding-right: 130px;
+
+    
 }
 
 .site-sale {
@@ -37,16 +38,13 @@ ul {
 }
 
 .body {
-    flex: 1;
     display: flex;
     color: white;
     align-items: center;
     justify-content: start;
     background: #1f2937;
-    padding-left: 130px;
-    padding-right: 130px;
-    padding-bottom: 70px;
-    gap: 40px;
+    padding: 0 200px;
+    height: 500px;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -108,8 +106,10 @@ button {
 .body-con {
     display: flex;
     font-family: 'Roboto', sans-serif;
-    flex-wrap: wrap;
+    flex-direction: column;
+    padding: 50px 0;
     align-items: center;
+    width: 100%;
     justify-content: center;
 }
 
@@ -143,7 +143,6 @@ button {
     color: #1f2937;
     font-weight: 900;
     text-align: center;
-    padding: 30px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -160,7 +159,10 @@ button {
 }
 
 .quote {
-    max-width: 700px;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
     font-style: italic;
     font-family: 'Roboto', sans-serif;
 }
@@ -174,14 +176,25 @@ button {
 /* Call to action */
 .call-to-action {
     display: flex;
-    gap: 8px;
-    align-items: center;
     justify-content: center;
-    background: #3882f6;
-    padding: 36px;
-    flex-wrap: wrap;
-    border-radius: 12px;
-    color: white;
+    padding: 100px 0;
+    width: 100%;
     font-size: 23px;
     margin-bottom: 20px;
+}
+
+.cta-con{
+    display: flex;
+    background: #3882f6;
+    align-items: center;
+    justify-content: space-between;
+    width: 70%;
+    color: white;
+    border-radius: 16px;
+    padding: 50px;
+}
+
+.cta-lef{
+    display: flex;
+
 }
